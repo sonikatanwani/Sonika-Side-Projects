@@ -7,7 +7,7 @@ Technology: JQuery, Google Graph API, Yahoo Stock API, Javascript, HTML5
 Project: Editable Grid
 Technology: JQuery, Javascript, HTML5
 
-Project: Video Library ( Animation )
+Project: Video On Demand ( Animation )
 Technology: JQuery, 3.js, HTML5, Javascript
 
 Project: JackFishSoftware WebSite ( Static )
