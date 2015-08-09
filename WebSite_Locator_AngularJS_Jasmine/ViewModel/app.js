@@ -1,0 +1,1 @@
+var geoLocationApp = angular.module('geoLocationApp', []);

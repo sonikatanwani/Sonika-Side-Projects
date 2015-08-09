@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<title> Stock Quote Data</title>
+<link type="text/css" rel="stylesheet" href="css/StockQuoteDisplayStyle.css">
+<script type="text/javascript" src="script/external/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="script/MainFile.js"></script>
+<script type="text/javascript" src="script/DataRetrieveService.js"></script>
+<script type="text/javascript"
+        src="https://www.google.com/jsapi?autoload={
+                'modules':[{
+                  'name':'visualization',
+                  'version':'1',
+                  'packages':['corechart']
+                }]
+              }"></script>
+</head>
+<body>
+<h1> History of Stocks </h1>
+
+<div>
+    <label for="symbol"> Enter the Stock Symbol:</label>
+    <input type="text" id="symbol" placeholder="MSFT,GOOG">
+</div>
+
+<input type="button" value="GetData" class="btn" id="submit" onclick="DisplayData();">
+<div id="displayError"></div>
+
+<div class="accordion">
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-1">List Result</a>
+
+        <div id="accordion-1" class="accordion-section-content">
+            <div id="display">There is no result to display.</div>
+        </div>
+        <!--end .accordion-section-content-->
+    </div>
+    <!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2">Line Chart for Symbol</a>
+        <div id="accordion-2" class="accordion-section-content">
+            <div id="curve_chart"> There is no result to display.</div>
+        </div>
+        <!--end .accordion-section-content-->
+    </div>
+</div>
+<!--end .accordion-->
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.has-error{
+    border: 1px solid red !important;
+}
+
+ul#errors {
+    -webkit-padding-start: 0px;
+}
+
+ul#errors li {
+    background-color: red;
+    color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 4px;
+
+}
